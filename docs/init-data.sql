@@ -1,0 +1,8 @@
+-- 演示账号不要在 SQL 里写明文或手写哈希。
+-- 执行 schema.sql 建表后启动应用，DemoDataInitializer 会用
+-- org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+-- 将默认密码 123456 加密后写入：
+--   admin / 123456     角色 ADMIN
+--   zhangsan / 123456  角色 EMPLOYEE
+-- 如需单独生成哈希，在 IDEA 运行：
+--   com.mealsubsidy.common.util.BCryptHashGenerator
